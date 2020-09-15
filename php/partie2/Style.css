@@ -1,0 +1,42 @@
+.body{
+  display: grid;
+  grid-template-columns: 15vw auto ;
+  grid-template-rows: 5vw 20vw 20vw 4vw;
+
+}
+
+
+.nav{
+  grid-column: 1/-1;
+  grid-row: 1;
+  background-color: red;
+  margin-bottom: 1vw;
+
+}
+
+.Art{
+  grid-column: 2;
+  grid-row: 2/4;
+  background-color: brown;
+}
+
+.Art_En_Cour{
+ grid-column: 1;
+  grid-row: 2;
+  background-color: aqua;
+  margin-right: 1vw;
+}
+
+.List{
+grid-column: 1;
+  grid-row: 3;
+  background-color: blueviolet;
+  margin-right: 1vw;
+
+}
+.footer{
+  grid-column: 1/-1;
+  grid-row: 4;
+  background-color: chartreuse;
+  margin-top: 1vw;
+}
