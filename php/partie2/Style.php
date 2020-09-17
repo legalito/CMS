@@ -1,3 +1,11 @@
+<?php
+header('content-type: text/css');
+ob_start('ob_gzhandler');
+header('Cache-Control: max-age=31536000, must-revalidate');
+// etc.
+?>
+
+
 .body{
   display: grid;
   grid-template-columns: 15vw auto ;
@@ -15,9 +23,11 @@
 }
 
 .Art{
+  border: solid 5px black;
   grid-column: 2;
   grid-row: 2/4;
   background-color: brown;
+  margin-right: 4vw;
 }
 
 .Art_En_Cour{
@@ -32,6 +42,7 @@ grid-column: 1;
   grid-row: 3;
   background-color: blueviolet;
   margin-right: 1vw;
+  margin-top: 1vw;
 
 }
 .footer{
@@ -39,4 +50,10 @@ grid-column: 1;
   grid-row: 4;
   background-color: chartreuse;
   margin-top: 1vw;
+}
+
+.logo{
+  height: 75px;
+
+
 }
