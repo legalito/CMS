@@ -1,0 +1,19 @@
+.login_form{
+  text-align: center;
+  margin-top: 35vh;
+  background-color: greenyellow;
+}
+
+.login_form h1{
+  font-family: "Agency FB";
+}
+
+.login_form label{
+  font-family: "Agency FB";
+  margin: auto;
+}
+
+.login_form input{
+  text-align: center;
+  border-radius:5px;
+}
