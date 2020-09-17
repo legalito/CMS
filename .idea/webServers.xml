@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="04c52a27-a2b2-4fc9-aaa4-1b7deb5e6d88" name="IUT" url="https://la-projets.univ-lemans.fr/~i190324">
+        <fileTransfer rootFolder="/home/www" accessType="SFTP" host="la-projets.univ-lemans.fr" port="2221" sshConfigId="71629568-ba7b-4ad8-866b-5e3bec767bab" sshConfig="i190324@la-projets.univ-lemans.fr:2221 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
