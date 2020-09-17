@@ -1,8 +1,10 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.php">
   <title>Title</title>
 </head>
 <body>
@@ -10,8 +12,8 @@
     <div class="nav"> </div>
     <div class="containerPreview">
         <h3> Articles dernièrement ajoutés </h3>
-        <p> Article 1 </p>
-        <p> Article 1 </p>
+        <div class="nom">
+         </div>
     </div>
     <div class="containerArticles">
       <input type="search" id="site-search" name="q"
