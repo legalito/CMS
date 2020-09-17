@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="jd">
-      <change afterPath="$PROJECT_DIR$/Photos/Grandmere_cafe_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photos/index.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_09_2020_16_21__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_09_2020_16_21__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/partie1/request.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/partie2/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/Style.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/partie2/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/partie1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/partie1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/style.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,14 +111,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="V1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Deployment" timestamp="1600345524345">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="233" y="0" key="#Deployment" timestamp="1600345160893">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1600345524345" />
-    <state x="536" y="165" key="#SSH_Configurations" timestamp="1600345468810">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1600345160893" />
+    <state x="217" y="0" key="#SSH_Configurations" timestamp="1600345049199">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="536" y="165" key="#SSH_Configurations/0.0.1920.1040@0.0.1920.1040" timestamp="1600345468810" />
+    <state x="217" y="0" key="#SSH_Configurations/0.0.1280.680@0.0.1280.680" timestamp="1600345049199" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1600179495516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
