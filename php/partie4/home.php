@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if(empty($_SESSION['mail']) || empty($_SESSION['password'])){
+    echo 'Erreur de session !';
+    header('Location: ../erreur.php');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
