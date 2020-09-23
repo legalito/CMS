@@ -10,7 +10,7 @@
 
 <body>
   <div class="fullscreen">
-    <div class="nav"> </div>
+    <div class="nav">  <button onclick="location.href='../partie3/login.html'"> Se connecter </button></div>
     <div class="containerPreview">
         <h3> Articles dernièrement ajoutés </h3>
         <div class="nom">
@@ -21,16 +21,13 @@
 
             $db = new PDO("$server:host=$host;dbname=$dbname", $user, $password);
 
-            $reponse = $db->query('SELECT * FROM articles');
+            $reponse = $db->query('SELECT * FROM articles ORDER BY Id DESC ');
 
             // On affiche chaque entrée une à une
             while ($donnees = $reponse->fetch())
             {
-            ?>
+            echo '<li><a href="#'. $donnees['id']. '"'. $donnees['titre'] . ' </li> <br />';
 
-           <li> <?php echo $donnees['titre']; ?></li> <br />
-
-            <?php
           }
 
 
@@ -46,16 +43,24 @@
 
       <button> Valider </button>
       <?php
-      $image = $db->query('SELECT id FROM articles WHERE titre="Café"');
-      $donnees = $image->fetch();
+      $reponse = $db->query('SELECT * FROM articles ORDER BY titre ASC');
 
+      while ($donnees = $reponse->fetch())
+      {
+
+        echo '<div class="article" id='. $donnees['Id'].'">
+          <h1>' . $donnees['titre'] . '</h1>'
+        .'<img src="../../photos/' . $donnees['Id']. '.jpg" style="width: 10vw;">
+          <p> '.$donnees['resume'].' </p>
+        </div>';
+
+
+          }
+          $reponse->closeCursor(); // Termine le traitement de la requête
       ?>
-      <div class="article1">
-        <h1> </h1>
-          <img src="../../photos/<?php echo $donnees['id'] ?>.jpg" style="width: 10vw;">
+
       </div>
-      </div>
-    </div>
+
     <div class="footer"> 2020. Tous les droits sont réservés . Tous les logos et marques de commerce appartiennent à leurs propriétaires respectifs. </div>
   </div>
 </body>

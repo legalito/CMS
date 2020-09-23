@@ -2,7 +2,7 @@
 .fullscreen{
 
   display: grid;
-  grid-template-columns: 20vw 10vw auto 10vw;
+  grid-template-columns: 20vw 5vw auto 10vw;
   grid-template-rows: 5vw auto 5vw;
   font: 1rem 'Fira Sans', sans-serif;
 }
@@ -11,6 +11,14 @@
   grid-column: 1/-1;
   grid-row: 1;
   background-color: saddlebrown;
+}
+
+.nav button{
+  display: block;
+  margin-left: auto;
+  margin-right: 5vw;
+  margin-top : 1.5vw;
+  margin-bottom : auto;
 }
 
 .containerPreview{
@@ -27,6 +35,41 @@
   text-align: center;
 }
 
+.article {
+  display: grid;
+  grid-template-rows: 15vw;
+  grid-template-columns: 15vw auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  border : solid 0.2vw saddlebrown;
+  border-radius: 20px;
+}
+
+.article img{
+  grid-row: 1;
+  grid-column: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 20px;
+
+}
+
+.article p{
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 1.5vw;
+  margin-top: 5vw;
+
+}
+
+.article h1{
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 1.5vw;
+}
 .footer{
   grid-row: 3;
   grid-column: 1/-1;
