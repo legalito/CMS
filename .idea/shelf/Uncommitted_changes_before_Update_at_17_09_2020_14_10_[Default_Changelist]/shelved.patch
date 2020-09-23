@@ -1,73 +1,43 @@
-Index: php/partie2/Style.css
+Index: php/partie1/index.html
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
-<+>.body{\r\n  display: grid;\r\n  grid-template-columns: 15vw auto ;\r\n  grid-template-rows: 5vw 20vw 20vw 4vw;\r\n\r\n}\r\n\r\n\r\n.nav{\r\n  grid-column: 1/-1;\r\n  grid-row: 1;\r\n  background-color: red;\r\n  margin-bottom: 1vw;\r\n\r\n}\r\n\r\n.Art{\r\n  grid-column: 2;\r\n  grid-row: 2/4;\r\n  background-color: brown;\r\n}\r\n\r\n.Art_En_Cour{\r\n grid-column: 1;\r\n  grid-row: 2;\r\n  background-color: aqua;\r\n  margin-right: 1vw;\r\n}\r\n\r\n.List{\r\ngrid-column: 1;\r\n  grid-row: 3;\r\n  background-color: blueviolet;\r\n  margin-right: 1vw;\r\n\r\n}\r\n.footer{\r\n  grid-column: 1/-1;\r\n  grid-row: 4;\r\n  background-color: chartreuse;\r\n  margin-top: 1vw;\r\n}\r\n
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\r\n  <title>Title</title>\r\n</head>\r\n<body>\r\n  <div class=\"fullscreen\">\r\n    <div class=\"nav\"> </div>\r\n    <div class=\"containerPreview\">\r\n        <h3> Articles dernièrement ajoutés </h3>\r\n        <p> Article 1 </p>\r\n        <p> Article 1 </p>\r\n    </div>\r\n    <div class=\"containerArticles\">\r\n      <input type=\"search\" id=\"site-search\" name=\"q\"\r\n             aria-label=\"Search through site content\" placeholder=\"Rechercher un article\">\r\n\r\n      <button> Valider </button>\r\n      <div class=\"article1\">\r\n          <img src=\"../../icon.png\">\r\n      </div>\r\n    </div>\r\n    <div class=\"footer\"> 2020. Tous les droits sont réservés . Tous les logos et marques de commerce appartiennent à leurs propriétaires respectifs. </div>\r\n  </div>\r\n</body>\r\n</html>\r\n
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- php/partie2/Style.css	(revision e6afe16d7bf5d8ce711ab778ac1b5ff84526f55e)
-+++ php/partie2/Style.css	(date 1600263258922)
-@@ -15,9 +15,11 @@
- }
- 
- .Art{
-+  border: solid 5px black;
-   grid-column: 2;
-   grid-row: 2/4;
-   background-color: brown;
-+  margin-right: 4vw;
- }
- 
- .Art_En_Cour{
-@@ -32,6 +34,7 @@
-   grid-row: 3;
-   background-color: blueviolet;
-   margin-right: 1vw;
-+  margin-top: 1vw;
- 
- }
- .footer{
-@@ -40,3 +43,9 @@
-   background-color: chartreuse;
-   margin-top: 1vw;
- }
-+
-+.logo{
-+  height: 75px;
+--- php/partie1/index.html	(revision a839ade0c05209ac0b8fc395541f91c441179d14)
++++ php/partie1/index.html	(date 1600344629726)
+@@ -1,3 +1,5 @@
 +
 +
-+}
-Index: php/partie2/article.html
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+@@ -10,8 +12,7 @@
+     <div class="nav"> </div>
+     <div class="containerPreview">
+         <h3> Articles dernièrement ajoutés </h3>
+-        <p> Article 1 </p>
+-        <p> Article 1 </p>
++        <div class="nom"> <?php </div>
+     </div>
+     <div class="containerArticles">
+       <input type="search" id="site-search" name="q"
+Index: php/partie1/request.php
 IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
-<+><!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\">\r\n  <title>Article</title>\r\n</head>\r\n<body class=\"body\">\r\n  <div class=\"nav\">nav</div>\r\n  <div class=\"Art_En_Cour\"> en cour </div>\r\n  <div class=\"List\">list</div>\r\n  <div class=\"Art\">Art</div>\r\n\r\n<div class=\"footer\"> footer </div>\r\n</body>\r\n</html>\r\n
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- php/partie2/article.html	(revision e6afe16d7bf5d8ce711ab778ac1b5ff84526f55e)
-+++ php/partie2/article.html	(date 1600343851189)
-@@ -6,10 +6,19 @@
-   <title>Article</title>
- </head>
- <body class="body">
--  <div class="nav">nav</div>
-+  <div class="nav">
-+    <img src="../../Photos/Grandmere_cafe_logo.png" class="logo" alt="Logo">
+--- php/partie1/request.php	(date 1600344428685)
++++ php/partie1/request.php	(date 1600344428685)
+@@ -0,0 +1,7 @@
++<?php
 +
-+  </div>
-   <div class="Art_En_Cour"> en cour </div>
-   <div class="List">list</div>
--  <div class="Art">Art</div>
-+  <div class="Art">
-+    <div class="TitreArticle">requete php demander</div>
-+    <img class="photo">
-+    <div class="resume"></div>
++  $db = new PDO("$server:host=$host;dbname = $base", $user, $pass);
++
++  $titre = $db->query('SELECT * FROM jeux_video');
 +
 +
-+  </div>
- 
- <div class="footer"> footer </div>
- </body>
 Index: .idea/workspace.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
@@ -75,63 +45,56 @@ Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
---- .idea/workspace.xml	(revision e6afe16d7bf5d8ce711ab778ac1b5ff84526f55e)
-+++ .idea/workspace.xml	(date 1600344633762)
-@@ -20,9 +20,11 @@
+--- .idea/workspace.xml	(revision a839ade0c05209ac0b8fc395541f91c441179d14)
++++ .idea/workspace.xml	(date 1600344629797)
+@@ -20,7 +20,7 @@
    </component>
    <component name="ChangeListManager">
      <list default="true" id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="jd">
 -      <change afterPath="$PROJECT_DIR$/php/partie1/style.css" afterDir="false" />
-+      <change afterPath="$PROJECT_DIR$/Photos/Grandmere_cafe_logo.png" afterDir="false" />
-+      <change afterPath="$PROJECT_DIR$/Photos/index.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/php/partie1/request.php" afterDir="false" />
        <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
--      <change beforePath="$PROJECT_DIR$/php/partie1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/index.html" afterDir="false" />
-+      <change beforePath="$PROJECT_DIR$/php/partie2/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/Style.css" afterDir="false" />
-+      <change beforePath="$PROJECT_DIR$/php/partie2/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/article.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/php/partie1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/index.html" afterDir="false" />
      </list>
-     <option name="SHOW_DIALOG" value="false" />
-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
-@@ -54,7 +56,13 @@
-     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-     <property name="WebServerToolWindowFactoryState" value="false" />
-     <property name="list.type.of.created.stylesheet" value="CSS" />
-+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
-     <property name="vue.rearranger.settings.migration" value="true" />
-+  </component>
-+  <component name="RecentsManager">
-+    <key name="MoveFile.RECENT_KEYS">
-+      <recent name="C:\Users\hlega\PhpstormProjects\CMS\Photos" />
-+    </key>
-   </component>
-   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-   <component name="TaskManager">
-@@ -65,6 +73,11 @@
+@@ -65,6 +65,8 @@
        <option name="presentableId" value="Default" />
        <updated>1600178765444</updated>
        <workItem from="1600178767782" duration="934000" />
-+      <workItem from="1600261091360" duration="2782000" />
-+      <workItem from="1600277236668" duration="194000" />
-+      <workItem from="1600279030917" duration="170000" />
-+      <workItem from="1600335093541" duration="30000" />
-+      <workItem from="1600342981287" duration="1479000" />
++      <workItem from="1600342449445" duration="542000" />
++      <workItem from="1600343011479" duration="1615000" />
      </task>
      <task id="LOCAL-00001" summary="jd">
        <created>1600179042857</created>
-@@ -100,10 +113,15 @@
+@@ -73,7 +75,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1600179042857</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="jd">
++      <created>1600182172930</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1600182172930</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -100,10 +109,14 @@
        <screen x="0" y="0" width="1280" height="680" />
      </state>
      <state x="280" y="102" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1600179990769" />
 -    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600179261577">
--      <screen x="0" y="0" width="1280" height="680" />
-+    <state x="461" y="165" key="SettingsEditor" timestamp="1600343015921">
-+      <screen x="0" y="0" width="1920" height="1040" />
++    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1600343809084">
++      <screen x="0" y="0" width="1280" height="680" />
 +    </state>
-+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600343015921" />
-+    <state x="350" y="113" key="Vcs.Push.Dialog.v2" timestamp="1600264513814">
-+      <screen x="0" y="0" width="1920" height="1040" />
++    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1600343809084" />
++    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600182176501">
+       <screen x="0" y="0" width="1280" height="680" />
      </state>
-     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600179261577" />
-+    <state x="350" y="113" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600264513814" />
+-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600179261577" />
++    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600182176501" />
      <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600179629230">
        <screen x="0" y="0" width="1280" height="680" />
      </state>

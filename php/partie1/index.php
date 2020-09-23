@@ -13,7 +13,12 @@
     <div class="containerPreview">
         <h3> Articles dernièrement ajoutés </h3>
         <div class="nom">
-         </div>
+          <?php
+            include_once ("../db.php");
+            $result = get_unique_infos("SELECT * FROM articles");
+            echo $result['titre'];
+          ?>
+        </div>
     </div>
     <div class="containerArticles">
       <input type="search" id="site-search" name="q"
