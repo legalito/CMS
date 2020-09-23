@@ -1,0 +1,28 @@
+.body{
+  background: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, 200px);
+  background-color: black;
+}
+.menu {
+  grid-column: 1 ;
+  grid-row: 1 / 5;
+  background-color: blue;
+}
+.article_titre{
+  grid-column: 2 / 6;
+  grid-row: 1;
+  background-color: green;
+}
+.article {
+  grid-column: 2 / 6;
+  grid-row: 2 / 5;
+  background-color: red;
+}
+
+
