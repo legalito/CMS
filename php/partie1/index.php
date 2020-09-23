@@ -45,18 +45,15 @@
              aria-label="Search through site content" placeholder="Rechercher un article">
 
       <button> Valider </button>
+      <?php
+      $image = $db->query('SELECT id FROM articles WHERE titre="Café"');
+      $donnees = $image->fetch();
+
+      ?>
       <div class="article1">
-          <img src="
-          <?php
-
-          include_once('../db.inc.php');
-
-          $db = new PDO("$server:host=$host;dbname=$dbname", $user, $password);
-
-          $reponse = $db->query('SELECT id FROM articles');
-
-          ?>
-          .png">
+        <h1> </h1>
+          <img src="../../photos/<?php echo $donnees['id'] ?>.jpg" style="width: 10vw;">
+      </div>
       </div>
     </div>
     <div class="footer"> 2020. Tous les droits sont réservés . Tous les logos et marques de commerce appartiennent à leurs propriétaires respectifs. </div>
