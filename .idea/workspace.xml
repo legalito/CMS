@@ -19,10 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="jd">
+    <list default="true" id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="oui">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_08__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_08__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_10__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_13__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_13__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_57__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_57__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/partie1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/partie2/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/partie2/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/article.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +72,7 @@
       <updated>1600178863602</updated>
       <workItem from="1600178864661" duration="1061000" />
       <workItem from="1600845791915" duration="278000" />
+      <workItem from="1600848099348" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="V1">
       <created>1600179283899</created>
@@ -133,10 +140,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="jd" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="#Deployment" timestamp="1600345160893">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="350" y="0" key="#Deployment" timestamp="1600848431273">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1600345160893" />
+    <state x="350" y="0" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1600848431273" />
     <state x="217" y="0" key="#SSH_Configurations" timestamp="1600345049199">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -149,11 +157,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600179495516" />
-    <state x="301" y="120" key="Vcs.Push.Dialog.v2" timestamp="1600347687132">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1600848740698">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600347687132" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600179721074" />
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600848740698" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600179679520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
