@@ -1,7 +1,6 @@
 <?php
   session_start();
   if(empty($_SESSION['mail']) || empty($_SESSION['password'])){
-    echo 'Erreur de session !';
     header('Location: ../erreur.php');
   }
 ?>
@@ -17,6 +16,12 @@
 <body>
 <div class="grid">
   <div class="menu">
+    <li><?php $_SESSION['name'] ?></li>
+    <li><?php
+      include_once ("../db.php");
+      $resultat = get_informations_from_db('SELECT * FROM articles WHERE Id = 1');
+      echo $resultat['titre'];
+      ?></li>
     <li><a href="#" title="voir le profil">Profil</a></li>
     <li><a href="#" title="éditer le profil">Editer le profil</a></li>
     <li><a href="#" title="publier un article">Ajouter un article</a></li>
@@ -28,9 +33,10 @@
   </div>
   <div class="article"></div>
 </div>
+
+
+<a href="../signout.php">Se déconnecter</a>
+
 </body>
-
-
-
 
 </html>
