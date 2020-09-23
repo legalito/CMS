@@ -26,7 +26,7 @@
             // On affiche chaque entrée une à une
             while ($donnees = $reponse->fetch())
             {
-            echo '<li><a href="#'. $donnees['id']. '"'. $donnees['titre'] . ' </li> <br />';
+            echo '<li><a href="#'. $donnees['Id']. '">'. $donnees['titre'] . ' </a></li> <br>';
 
           }
 
@@ -41,17 +41,18 @@
       <input type="search" id="site-search" name="q"
              aria-label="Search through site content" placeholder="Rechercher un article">
 
-      <button> Valider </button>
+      <button> <img src="../../photos/recherche_logo_focused.png" style="width: 1vw; margin-top: 2px; border-radius: 50px"> </button>
       <?php
       $reponse = $db->query('SELECT * FROM articles ORDER BY titre ASC');
 
       while ($donnees = $reponse->fetch())
       {
 
-        echo '<div class="article" id='. $donnees['Id'].'">
+        echo '<div class="article" id="'. $donnees['Id'].'">
           <h1>' . $donnees['titre'] . '</h1>'
         .'<img src="../../photos/' . $donnees['Id']. '.jpg" style="width: 10vw;">
           <p> '.$donnees['resume'].' </p>
+          <button> Afficher </button>
         </div>';
 
 

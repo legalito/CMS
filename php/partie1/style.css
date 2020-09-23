@@ -7,6 +7,10 @@
   font: 1rem 'Fira Sans', sans-serif;
 }
 
+h3 {
+ text-align: center;
+}
+
 .nav{
   grid-column: 1/-1;
   grid-row: 1;
@@ -70,6 +74,27 @@
   grid-column: 2;
   font-size: 1.5vw;
 }
+
+.article button{
+  grid-row : 1;
+  grid-column : 2;
+  height: 3vw;
+  width: 10vw;
+  margin-top: 10vw;
+  display: block;
+  margin-left: 10vw;
+  margin-right: auto;
+  background-color: saddlebrown;
+  border-radius: 20px;
+  border : none;
+  color : white;
+}
+
+.article button:hover{
+  color: saddlebrown;
+  background-color: white;
+  border : solid 0.2vw saddlebrown;
+}
 .footer{
   grid-row: 3;
   grid-column: 1/-1;
@@ -85,6 +110,13 @@
 .containerArticles{
   grid-column: 3;
   grid-row: 2;
+  margin-top: 2vw;
+}
+
+.containerArticles button{
+  border-radius: 100px;
+  border: none;
+  background-color: saddlebrown;
 }
 
 label {
