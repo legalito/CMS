@@ -10,13 +10,10 @@ $db = new PDO("$server:host=$host;dbname=$dbname", $user, $password);
   echo $ligne['titre'];
 }*/
 
-function get_unique_infos($sql){
-  foreach ($GLOBALS['db']->query($sql) as $ligne){}
-  return $ligne;
-}
-
-function get_multiples_infos($sql){
-  foreach ['db']->query($sql) as $ligne;
+function get_informations_from_db($sql){
+  $image = $GLOBALS['db']->query($sql);
+  $donnees = $image->fetch();
+  return $donnees;
 }
 
 ?>

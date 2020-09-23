@@ -1,0 +1,226 @@
+Index: php/partie2/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\n\r\n.body{\r\n  display: grid;\r\n  grid-template-columns: 15vw auto ;\r\n  grid-template-rows: 5vw 20vw 20vw 4vw;\r\n\r\n}\r\n\r\n\r\n.nav{\r\n  grid-column: 1/-1;\r\n  grid-row: 1;\r\n  background-color: saddlebrown;\r\n  margin-bottom: 1vw;\r\n\r\n}\r\n\r\n.Art{\r\n  border: solid 5px black;\r\n  grid-column: 2;\r\n  grid-row: 2/4;\r\n  background-color: brown;\r\n  margin-right: 4vw;\r\n}\r\n\r\n.Art_En_Cour{\r\n grid-column: 1;\r\n  grid-row: 2;\r\n  background-color: aqua;\r\n  margin-right: 1vw;\r\n}\r\n\r\n.List{\r\ngrid-column: 1;\r\n  grid-row: 3;\r\n  background-color: blueviolet;\r\n  margin-right: 1vw;\r\n  margin-top: 1vw;\r\n\r\n}\r\n.footer{\r\n  grid-column: 1/-1;\r\n  grid-row: 4;\r\n  background-color: red;\r\n  margin-top: 1vw;\r\n}\r\n\r\n.logo{\r\n  height: 75px;\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- php/partie2/style.css	(revision 51ec3959ff8f621b6da49d431b69112b8be31b67)
++++ php/partie2/style.css	(date 1600850437383)
+@@ -18,10 +18,9 @@
+ }
+ 
+ .Art{
+-  border: solid 5px black;
+   grid-column: 2;
+   grid-row: 2/4;
+-  background-color: brown;
++  background-color: white;
+   margin-right: 4vw;
+ }
+ 
+@@ -35,7 +34,7 @@
+ .List{
+ grid-column: 1;
+   grid-row: 3;
+-  background-color: blueviolet;
++  background-color: red;
+   margin-right: 1vw;
+   margin-top: 1vw;
+ 
+@@ -43,7 +42,7 @@
+ .footer{
+   grid-column: 1/-1;
+   grid-row: 4;
+-  background-color: red;
++  background-color: saddlebrown;
+   margin-top: 1vw;
+ }
+ 
+Index: php/partie2/article.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\r\n  <title>Article</title>\r\n</head>\r\n<body class=\"body\">\r\n  <div class=\"nav\">\r\n    <img src=\"../../photos/grandmere_cafe_logo.png\" class=\"logo\" alt=\"Logo\">\r\n\r\n  </div>\r\n  <div class=\"Art_En_Cour\"> en cour </div>\r\n  <div class=\"List\">\r\n    <p>Article ajouter récemment</p>\r\n\r\n  </div>\r\n  <div class=\"Art\">\r\n    <div class=\"TitreArticle\">\r\n    </div>\r\n    <img class=\"photo\">\r\n    <div class=\"resume\"></div>\r\n\r\n\r\n  </div>\r\n\r\n<div class=\"footer\"> footer </div>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- php/partie2/article.php	(revision 51ec3959ff8f621b6da49d431b69112b8be31b67)
++++ php/partie2/article.php	(date 1600850919273)
+@@ -2,7 +2,7 @@
+ <html lang="fr">
+ <head>
+   <meta charset="UTF-8">
+-  <link rel="stylesheet" type="text/css" href="style.css">
++  <link rel="stylesheet" type="text/css" href="style.css" >
+   <title>Article</title>
+ </head>
+ <body class="body">
+@@ -17,6 +17,18 @@
+   </div>
+   <div class="Art">
+     <div class="TitreArticle">
++      <h2>Titre :</h2>
++      <?php
++
++     include_once ("../db.php");
++
++      $reponse = ('SELECT * FROM articles WHERE id = 1');
++
++      echo $reponse["titre"];
++
++
++
++      ?>
+     </div>
+     <img class="photo">
+     <div class="resume"></div>
+Index: .idea/deployment.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"PublishConfigData\" autoUpload=\"Always\" serverName=\"IUT\" remoteFilesAllowedToDisappearOnAutoupload=\"false\" autoUploadExternalChanges=\"true\">\r\n    <serverData>\r\n      <paths name=\"IUT\">\r\n        <serverdata>\r\n          <mappings>\r\n            <mapping local=\"$PROJECT_DIR$\" web=\"/\" />\r\n          </mappings>\r\n        </serverdata>\r\n      </paths>\r\n    </serverData>\r\n    <option name=\"myAutoUpload\" value=\"ALWAYS\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/deployment.xml	(revision 51ec3959ff8f621b6da49d431b69112b8be31b67)
++++ .idea/deployment.xml	(date 1600849596194)
+@@ -5,7 +5,7 @@
+       <paths name="IUT">
+         <serverdata>
+           <mappings>
+-            <mapping local="$PROJECT_DIR$" web="/" />
++            <mapping deploy="/CMS" local="$PROJECT_DIR$" web="/" />
+           </mappings>
+         </serverdata>
+       </paths>
+Index: .idea/webServers.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"WebServers\">\r\n    <option name=\"servers\">\r\n      <webServer id=\"f3625cfe-1b93-41c9-bc0b-a945dfedd146\" name=\"IUT\" url=\"https://la-projets.univ-lemans.fr/~i190324\">\r\n        <fileTransfer rootFolder=\"/home/www\" accessType=\"SFTP\" host=\"la-myweb.univ-lemans.fr\" port=\"22\" sshConfigId=\"02fe6559-d685-4d59-a711-a5d56b8a82f5\" sshConfig=\"i190324@la-myweb.univ-lemans.fr:22 password\">\r\n          <advancedOptions>\r\n            <advancedOptions dataProtectionLevel=\"Private\" passiveMode=\"true\" shareSSLContext=\"true\" />\r\n          </advancedOptions>\r\n        </fileTransfer>\r\n      </webServer>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/webServers.xml	(revision 51ec3959ff8f621b6da49d431b69112b8be31b67)
++++ .idea/webServers.xml	(date 1600849660923)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="WebServers">
+     <option name="servers">
+-      <webServer id="f3625cfe-1b93-41c9-bc0b-a945dfedd146" name="IUT" url="https://la-projets.univ-lemans.fr/~i190324">
++      <webServer id="6b3b29d9-038c-4914-ae5f-984508323da5" name="IUT" url="http://la-myweb.univ-lemans.fr/~i190324/CMS">
+         <fileTransfer rootFolder="/home/www" accessType="SFTP" host="la-myweb.univ-lemans.fr" port="22" sshConfigId="02fe6559-d685-4d59-a711-a5d56b8a82f5" sshConfig="i190324@la-myweb.univ-lemans.fr:22 password">
+           <advancedOptions>
+             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ee897c69-a053-4dfa-a13d-6d0ba4066773\" name=\"Default Changelist\" comment=\"V2\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/deployment.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/deployment.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_09_2020_16_21__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_09_2020_16_21__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_08__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_08__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_10__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_10__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_13__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_13__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_57__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_57__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_59__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_59__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_15_01__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_15_01__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_15_02__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_15_02__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/sshConfigs.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/sshConfigs.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/webServers.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/webServers.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/php/db.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/php/db.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/php/partie2/Style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/php/partie2/style.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/php/partie2/article.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/php/partie2/article.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1hYCuq1OHtlk2SxlcgLZOd5iRr3\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <OptionsSetting value=\"false\" id=\"Update\" />\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5700eedf-3fdb-4cc3-868a-578ba3f85a01\" name=\"Default Changelist\" comment=\"jd\" />\r\n      <created>1600178863602</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1600178863602</updated>\r\n      <workItem from=\"1600178864661\" duration=\"1061000\" />\r\n      <workItem from=\"1600845791915\" duration=\"278000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"V1\">\r\n      <created>1600179283899</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600179283901</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"V1\">\r\n      <created>1600179516671</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600179516671</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"V1\">\r\n      <created>1600179540161</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600179540161</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"jd\">\r\n      <created>1600345980679</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600345980679</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"jd\">\r\n      <created>1600347662056</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600347662056</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"jd\">\r\n      <created>1600347685211</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600347685211</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"V1\" />\r\n    <MESSAGE value=\"jd\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"jd\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"280\" y=\"0\" key=\"#Deployment\" timestamp=\"1600849194012\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"233\" y=\"0\" key=\"#Deployment/0.0.1280.680@0.0.1280.680\" timestamp=\"1600345160893\" />\r\n    <state x=\"280\" y=\"0\" key=\"#Deployment/0.0.1536.824@0.0.1536.824\" timestamp=\"1600849194012\" />\r\n    <state x=\"444\" y=\"83\" key=\"#Options\" timestamp=\"1600849162692\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"444\" y=\"83\" key=\"#Options/0.0.1536.824@0.0.1536.824\" timestamp=\"1600849162692\" />\r\n    <state x=\"217\" y=\"0\" key=\"#SSH_Configurations\" timestamp=\"1600345049199\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"217\" y=\"0\" key=\"#SSH_Configurations/0.0.1280.680@0.0.1280.680\" timestamp=\"1600345049199\" />\r\n    <state x=\"280\" y=\"102\" key=\"MultipleFileMergeDialog\" timestamp=\"1600347698889\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"280\" y=\"102\" key=\"MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680\" timestamp=\"1600347698889\" />\r\n    <state x=\"604\" y=\"336\" key=\"NewPhpFileDialog\" timestamp=\"1600179495516\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"604\" y=\"336\" key=\"NewPhpFileDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1600179495516\" />\r\n    <state x=\"301\" y=\"120\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1600347687132\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"301\" y=\"120\" key=\"Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680\" timestamp=\"1600347687132\" />\r\n    <state x=\"361\" y=\"145\" key=\"Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824\" timestamp=\"1600179721074\" />\r\n    <state x=\"586\" y=\"326\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1600179679520\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"586\" y=\"326\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824\" timestamp=\"1600179679520\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 51ec3959ff8f621b6da49d431b69112b8be31b67)
++++ .idea/workspace.xml	(date 1600849870750)
+@@ -19,22 +19,13 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="ee897c69-a053-4dfa-a13d-6d0ba4066773" name="Default Changelist" comment="V2">
++    <list default="true" id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="oui">
+       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_09_2020_16_21__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_09_2020_16_21__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_08__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_08__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_10__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_13__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_13__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_57__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_57__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_59__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_59__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_15_01__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_15_01__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_15_02__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_15_02__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_09_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_09_53__Default_Changelist_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/php/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/db.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/php/partie2/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/style.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/php/partie2/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/article.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/php/partie2/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/style.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -57,7 +48,6 @@
+   <component name="ProjectId" id="1hYCuq1OHtlk2SxlcgLZOd5iRr3" />
+   <component name="ProjectLevelVcsManager">
+     <OptionsSetting value="false" id="Update" />
+-    <ConfirmationsSetting value="2" id="Add" />
+   </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+@@ -67,8 +57,6 @@
+     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="node.js.path.for.package.tslint" value="project" />
+-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -81,6 +69,7 @@
+       <updated>1600178863602</updated>
+       <workItem from="1600178864661" duration="1061000" />
+       <workItem from="1600845791915" duration="278000" />
++      <workItem from="1600848099348" duration="659000" />
+     </task>
+     <task id="LOCAL-00001" summary="V1">
+       <created>1600179283899</created>
+@@ -148,19 +137,16 @@
+     <option name="LAST_COMMIT_MESSAGE" value="jd" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="280" y="0" key="#Deployment" timestamp="1600849194012">
+-      <screen x="0" y="0" width="1536" height="824" />
++    <state x="350" y="0" key="#Deployment" timestamp="1600849660516">
++      <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1600345160893" />
+-    <state x="280" y="0" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1600849194012" />
+-    <state x="444" y="83" key="#Options" timestamp="1600849162692">
+-      <screen x="0" y="0" width="1536" height="824" />
+-    </state>
+-    <state x="444" y="83" key="#Options/0.0.1536.824@0.0.1536.824" timestamp="1600849162692" />
+-    <state x="217" y="0" key="#SSH_Configurations" timestamp="1600345049199">
+-      <screen x="0" y="0" width="1280" height="680" />
++    <state x="350" y="0" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1600849660516" />
++    <state x="326" y="0" key="#SSH_Configurations" timestamp="1600849556115">
++      <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="217" y="0" key="#SSH_Configurations/0.0.1280.680@0.0.1280.680" timestamp="1600345049199" />
++    <state x="326" y="0" key="#SSH_Configurations/0.0.1920.1040@0.0.1920.1040" timestamp="1600849556115" />
+     <state x="280" y="102" key="MultipleFileMergeDialog" timestamp="1600347698889">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+@@ -169,14 +155,23 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600179495516" />
+-    <state x="301" y="120" key="Vcs.Push.Dialog.v2" timestamp="1600347687132">
+-      <screen x="0" y="0" width="1280" height="680" />
++    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1600848740698">
++      <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600347687132" />
+     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600179721074" />
++    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600848740698" />
+     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600179679520">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600179679520" />
++    <state x="643" y="72" key="ftp.server.browser" timestamp="1600849594592">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="643" y="72" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1600849594592" />
++    <state x="616" y="240" key="run.anything.popup" timestamp="1600849860133">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600849860133" />
+   </component>
+ </project>
+\ No newline at end of file
+diff --git .idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_09_53__Default_Changelist_.xml .idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_09_53__Default_Changelist_.xml
