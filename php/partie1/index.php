@@ -15,8 +15,8 @@
         <div class="nom">
           <?php
             include_once ("../db.php");
-            $result = get_unique_infos("SELECT nom FROM articles");
-            echo $result['nom'];
+            $result = get_unique_infos("SELECT * FROM articles");
+            echo $result['titre'];
           ?>
         </div>
     </div>
