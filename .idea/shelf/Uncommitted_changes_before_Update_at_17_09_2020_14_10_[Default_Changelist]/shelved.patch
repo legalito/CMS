@@ -1,0 +1,78 @@
+Index: php/partie4/home.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>Title</title>\r\n</head>\r\n<body>\r\n\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- php/partie4/home.html	(revision a839ade0c05209ac0b8fc395541f91c441179d14)
++++ php/partie4/home.html	(date 1600343707266)
+@@ -2,9 +2,20 @@
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
++  <link type="text/css" rel="stylesheet" href="stylesheet.css">
+   <title>Title</title>
+ </head>
+ <body>
+-
++<div class="grid">
++  <div class="one"></div>
++  <div class="two"></div>
++  <div class="three"></div>
++</div>
+ </body>
+ </html>
++
++
++
++
++
++</HTML>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5700eedf-3fdb-4cc3-868a-578ba3f85a01\" name=\"Default Changelist\" comment=\"jd\">\r\n      <change afterPath=\"$PROJECT_DIR$/php/partie1/style.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/php/partie1/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/php/partie1/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1hYCiC155YT9rvZpfKj7KGr5UbX\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <OptionsSetting value=\"false\" id=\"Update\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5700eedf-3fdb-4cc3-868a-578ba3f85a01\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1600178765444</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1600178765444</updated>\r\n      <workItem from=\"1600178767782\" duration=\"934000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"jd\">\r\n      <created>1600179042857</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600179042857</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"jd\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"jd\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"280\" y=\"102\" key=\"MultipleFileMergeDialog\" timestamp=\"1600179990769\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"280\" y=\"102\" key=\"MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680\" timestamp=\"1600179990769\" />\r\n    <state x=\"233\" y=\"74\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1600179261577\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"233\" y=\"74\" key=\"Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680\" timestamp=\"1600179261577\" />\r\n    <state x=\"458\" y=\"255\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1600179629230\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"458\" y=\"255\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680\" timestamp=\"1600179629230\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision a839ade0c05209ac0b8fc395541f91c441179d14)
++++ .idea/workspace.xml	(date 1600344463860)
+@@ -20,9 +20,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="jd">
+-      <change afterPath="$PROJECT_DIR$/php/partie1/style.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/php/partie1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/php/partie4/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie4/home.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -53,6 +52,7 @@
+   <component name="PropertiesComponent">
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="last_opened_file_path" value="E:/Programmation web coté serveur/Sprint 1/stylesheet.css" />
+     <property name="list.type.of.created.stylesheet" value="CSS" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+@@ -65,6 +65,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1600178765444</updated>
+       <workItem from="1600178767782" duration="934000" />
++      <workItem from="1600342977169" duration="1485000" />
+     </task>
+     <task id="LOCAL-00001" summary="jd">
+       <created>1600179042857</created>
+@@ -96,6 +97,10 @@
+     <option name="LAST_COMMIT_MESSAGE" value="jd" />
+   </component>
+   <component name="WindowStateProjectService">
++    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600343612486">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600343612486" />
+     <state x="280" y="102" key="MultipleFileMergeDialog" timestamp="1600179990769">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
