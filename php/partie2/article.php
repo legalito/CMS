@@ -12,19 +12,28 @@
   </div>
   <div class="Art_En_Cour"> en cour </div>
   <div class="List">
-    <p>Article ajouter récemment</p>
+    <p>Article ajoute récemment</p>
 
   </div>
   <div class="Art">
-    <div class="TitreArticle">
-      <h2>Titre :<?php
+
+    <div class="titreArticle">
+      <h2><?php
         include_once ("../db.php");
-        $result = get_informations_from_db('SELECT * FROM articles');
+        $result = get_informations_from_db('SELECT * FROM articles ' );
         echo $result['titre'];
         ?> </h2>
-
     </div>
-    <img class="photo">
+
+    <div class="art-img">
+      <img src="../../photos/<?php echo $result['Id'] ?>.jpg" style="width: 25vw;" >
+    </div>
+
+    <div class="art-notes">
+      <p>évaluation de l'article : <?php echo $result['notes'] ?></p>
+    </div>
+
+
     <div class="resume"><?php echo $result['resume']; ?></div>
 
 
