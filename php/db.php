@@ -15,4 +15,8 @@ function get_unique_infos($sql){
   return $ligne;
 }
 
+function get_multiples_infos($sql){
+  foreach ['db']->query($sql) as $ligne;
+}
+
 ?>

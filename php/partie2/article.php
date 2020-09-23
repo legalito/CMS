@@ -2,12 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="Style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Article</title>
 </head>
 <body class="body">
   <div class="nav">
-    <img src="../../Photos/Grandmere_cafe_logo.png" class="logo" alt="Logo">
+    <img src="../../photos/grandmere_cafe_logo.png" class="logo" alt="Logo">
 
   </div>
   <div class="Art_En_Cour"> en cour </div>
