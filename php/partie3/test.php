@@ -2,7 +2,7 @@
 
 include_once('../db.php');
 
-$s = get_unique_infos("SELECT * FROM articles");
+$s = get_informations_from_db("SELECT * FROM articles");
 echo $s['titre'];
 
 ?>

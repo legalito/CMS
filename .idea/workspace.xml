@@ -19,12 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee897c69-a053-4dfa-a13d-6d0ba4066773" name="Default Changelist" comment="oui">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="jd">
+      <change afterPath="$PROJECT_DIR$/photos/logo_recherche.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photos/recherche_logo_focused.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_10_22__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_10_22__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_10_49__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_10_49__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_11_08__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_11_08__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/partie2/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/partie2/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/partie1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/partie1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,6 @@
   <component name="ProjectId" id="1hYCuq1OHtlk2SxlcgLZOd5iRr3" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -69,15 +71,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee897c69-a053-4dfa-a13d-6d0ba4066773" name="Default Changelist" comment="oui" />
+      <changelist id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="jd" />
       <created>1600178863602</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600178863602</updated>
       <workItem from="1600178864661" duration="1061000" />
       <workItem from="1600845791915" duration="2802000" />
-      <workItem from="1600848624212" duration="1536000" />
-      <workItem from="1600862799942" duration="4917000" />
+      <workItem from="1600848624212" duration="6014000" />
+      <workItem from="1600862644148" duration="4866000" />
     </task>
     <task id="LOCAL-00001" summary="V1">
       <created>1600179283899</created>
@@ -142,14 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600849270244</updated>
     </task>
-    <task id="LOCAL-00010" summary="oui">
-      <created>1600863574945</created>
+    <task id="LOCAL-00010" summary="jd">
+      <created>1600850228390</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1600863574945</updated>
+      <updated>1600850228390</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="jd">
+      <created>1600864599469</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600864599469</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,41 +179,45 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V1" />
     <MESSAGE value="jd" />
-    <MESSAGE value="oui" />
-    <option name="LAST_COMMIT_MESSAGE" value="oui" />
+    <option name="LAST_COMMIT_MESSAGE" value="jd" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="350" y="0" key="#Deployment" timestamp="1600864132903">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1600345160893" />
-    <state x="350" y="0" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1600864132903" />
-    <state x="326" y="0" key="#SSH_Configurations" timestamp="1600864065336">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="217" y="0" key="#SSH_Configurations/0.0.1280.680@0.0.1280.680" timestamp="1600345049199" />
-    <state x="326" y="0" key="#SSH_Configurations/0.0.1920.1040@0.0.1920.1040" timestamp="1600864065336" />
-    <state x="280" y="102" key="MultipleFileMergeDialog" timestamp="1600849261425">
+    <state x="233" y="0" key="#Deployment" timestamp="1600863673748">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="280" y="102" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1600849261425" />
+    <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1600863673748" />
+    <state x="217" y="0" key="#SSH_Configurations" timestamp="1600863671232">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="217" y="0" key="#SSH_Configurations/0.0.1280.680@0.0.1280.680" timestamp="1600863671232" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600863400537">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1600863400537" />
+    <state x="280" y="102" key="MultipleFileMergeDialog" timestamp="1600864619654">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="280" y="102" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1600864619654" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1600179495516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1600179495516" />
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1600863576790">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="301" y="120" key="Vcs.Push.Dialog.v2" timestamp="1600864601402">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600849272045" />
+    <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600864601402" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600179721074" />
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600863576790" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600179679520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600179679520" />
-    <state x="643" y="72" key="ftp.server.browser" timestamp="1600864092183">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="526" y="71" key="ftp.server.browser" timestamp="1600850848786">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="643" y="72" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1600864092183" />
+    <state x="526" y="71" key="ftp.server.browser/0.0.1280.680@0.0.1280.680" timestamp="1600850848786" />
+    <state x="512" y="233" key="publish.login" timestamp="1600850366903">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="512" y="233" key="publish.login/0.0.1280.680@0.0.1280.680" timestamp="1600850366903" />
   </component>
 </project>

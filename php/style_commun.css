@@ -1,0 +1,26 @@
+.fullscreen{
+
+  display: grid;
+  grid-template-columns: 10vw auto 10vw;
+  grid-template-rows: 5vw auto 5vw;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.nav{
+  grid-column: 1/-1;
+  grid-row: 1;
+  background-color: saddlebrown;
+}
+
+.footer{
+  grid-row: 3;
+  grid-column: 1/-1;
+  background-color: saddlebrown;
+  font: 1rem 'Fira Sans', sans-serif;
+  color: white;
+  vertical-align: center;
+  text-align: center;
+  horiz-align: center;
+  padding-top: 1vw;
+}
+

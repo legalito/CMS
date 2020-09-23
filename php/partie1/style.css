@@ -2,15 +2,27 @@
 .fullscreen{
 
   display: grid;
-  grid-template-columns: 20vw 10vw auto 10vw;
+  grid-template-columns: 20vw 5vw auto 10vw;
   grid-template-rows: 5vw auto 5vw;
   font: 1rem 'Fira Sans', sans-serif;
+}
+
+h3 {
+ text-align: center;
 }
 
 .nav{
   grid-column: 1/-1;
   grid-row: 1;
   background-color: saddlebrown;
+}
+
+.nav button{
+  display: block;
+  margin-left: auto;
+  margin-right: 5vw;
+  margin-top : 1.5vw;
+  margin-bottom : auto;
 }
 
 .containerPreview{
@@ -27,6 +39,62 @@
   text-align: center;
 }
 
+.article {
+  display: grid;
+  grid-template-rows: 15vw;
+  grid-template-columns: 15vw auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  border : solid 0.2vw saddlebrown;
+  border-radius: 20px;
+}
+
+.article img{
+  grid-row: 1;
+  grid-column: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 20px;
+
+}
+
+.article p{
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 1.5vw;
+  margin-top: 5vw;
+
+}
+
+.article h1{
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 1.5vw;
+}
+
+.article button{
+  grid-row : 1;
+  grid-column : 2;
+  height: 3vw;
+  width: 10vw;
+  margin-top: 10vw;
+  display: block;
+  margin-left: 10vw;
+  margin-right: auto;
+  background-color: saddlebrown;
+  border-radius: 20px;
+  border : none;
+  color : white;
+}
+
+.article button:hover{
+  color: saddlebrown;
+  background-color: white;
+  border : solid 0.2vw saddlebrown;
+}
 .footer{
   grid-row: 3;
   grid-column: 1/-1;
@@ -42,6 +110,13 @@
 .containerArticles{
   grid-column: 3;
   grid-row: 2;
+  margin-top: 2vw;
+}
+
+.containerArticles button{
+  border-radius: 100px;
+  border: none;
+  background-color: saddlebrown;
 }
 
 label {
