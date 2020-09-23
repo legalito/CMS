@@ -1,0 +1,137 @@
+Index: php/partie2/Style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.body{\r\n  display: grid;\r\n  grid-template-columns: 15vw auto ;\r\n  grid-template-rows: 5vw 20vw 20vw 4vw;\r\n\r\n}\r\n\r\n\r\n.nav{\r\n  grid-column: 1/-1;\r\n  grid-row: 1;\r\n  background-color: red;\r\n  margin-bottom: 1vw;\r\n\r\n}\r\n\r\n.Art{\r\n  grid-column: 2;\r\n  grid-row: 2/4;\r\n  background-color: brown;\r\n}\r\n\r\n.Art_En_Cour{\r\n grid-column: 1;\r\n  grid-row: 2;\r\n  background-color: aqua;\r\n  margin-right: 1vw;\r\n}\r\n\r\n.List{\r\ngrid-column: 1;\r\n  grid-row: 3;\r\n  background-color: blueviolet;\r\n  margin-right: 1vw;\r\n\r\n}\r\n.footer{\r\n  grid-column: 1/-1;\r\n  grid-row: 4;\r\n  background-color: chartreuse;\r\n  margin-top: 1vw;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- php/partie2/Style.css	(revision e6afe16d7bf5d8ce711ab778ac1b5ff84526f55e)
++++ php/partie2/Style.css	(date 1600263258922)
+@@ -15,9 +15,11 @@
+ }
+ 
+ .Art{
++  border: solid 5px black;
+   grid-column: 2;
+   grid-row: 2/4;
+   background-color: brown;
++  margin-right: 4vw;
+ }
+ 
+ .Art_En_Cour{
+@@ -32,6 +34,7 @@
+   grid-row: 3;
+   background-color: blueviolet;
+   margin-right: 1vw;
++  margin-top: 1vw;
+ 
+ }
+ .footer{
+@@ -40,3 +43,9 @@
+   background-color: chartreuse;
+   margin-top: 1vw;
+ }
++
++.logo{
++  height: 75px;
++
++
++}
+Index: php/partie2/article.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"fr\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\">\r\n  <title>Article</title>\r\n</head>\r\n<body class=\"body\">\r\n  <div class=\"nav\">nav</div>\r\n  <div class=\"Art_En_Cour\"> en cour </div>\r\n  <div class=\"List\">list</div>\r\n  <div class=\"Art\">Art</div>\r\n\r\n<div class=\"footer\"> footer </div>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- php/partie2/article.html	(revision e6afe16d7bf5d8ce711ab778ac1b5ff84526f55e)
++++ php/partie2/article.html	(date 1600343851189)
+@@ -6,10 +6,19 @@
+   <title>Article</title>
+ </head>
+ <body class="body">
+-  <div class="nav">nav</div>
++  <div class="nav">
++    <img src="../../Photos/Grandmere_cafe_logo.png" class="logo" alt="Logo">
++
++  </div>
+   <div class="Art_En_Cour"> en cour </div>
+   <div class="List">list</div>
+-  <div class="Art">Art</div>
++  <div class="Art">
++    <div class="TitreArticle">requete php demander</div>
++    <img class="photo">
++    <div class="resume"></div>
++
++
++  </div>
+ 
+ <div class="footer"> footer </div>
+ </body>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5700eedf-3fdb-4cc3-868a-578ba3f85a01\" name=\"Default Changelist\" comment=\"jd\">\r\n      <change afterPath=\"$PROJECT_DIR$/php/partie1/style.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/php/partie1/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/php/partie1/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1hYCiC155YT9rvZpfKj7KGr5UbX\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <OptionsSetting value=\"false\" id=\"Update\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5700eedf-3fdb-4cc3-868a-578ba3f85a01\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1600178765444</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1600178765444</updated>\r\n      <workItem from=\"1600178767782\" duration=\"934000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"jd\">\r\n      <created>1600179042857</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600179042857</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"jd\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"jd\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"280\" y=\"102\" key=\"MultipleFileMergeDialog\" timestamp=\"1600179990769\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"280\" y=\"102\" key=\"MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680\" timestamp=\"1600179990769\" />\r\n    <state x=\"233\" y=\"74\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1600179261577\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"233\" y=\"74\" key=\"Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680\" timestamp=\"1600179261577\" />\r\n    <state x=\"458\" y=\"255\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1600179629230\">\r\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"680\" />\r\n    </state>\r\n    <state x=\"458\" y=\"255\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680\" timestamp=\"1600179629230\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision e6afe16d7bf5d8ce711ab778ac1b5ff84526f55e)
++++ .idea/workspace.xml	(date 1600344633762)
+@@ -20,9 +20,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="5700eedf-3fdb-4cc3-868a-578ba3f85a01" name="Default Changelist" comment="jd">
+-      <change afterPath="$PROJECT_DIR$/php/partie1/style.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Photos/Grandmere_cafe_logo.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Photos/index.png" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/php/partie1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/php/partie2/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/Style.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/php/partie2/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/article.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -54,7 +56,13 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="list.type.of.created.stylesheet" value="CSS" />
++    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+     <property name="vue.rearranger.settings.migration" value="true" />
++  </component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\hlega\PhpstormProjects\CMS\Photos" />
++    </key>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -65,6 +73,11 @@
+       <option name="presentableId" value="Default" />
+       <updated>1600178765444</updated>
+       <workItem from="1600178767782" duration="934000" />
++      <workItem from="1600261091360" duration="2782000" />
++      <workItem from="1600277236668" duration="194000" />
++      <workItem from="1600279030917" duration="170000" />
++      <workItem from="1600335093541" duration="30000" />
++      <workItem from="1600342981287" duration="1479000" />
+     </task>
+     <task id="LOCAL-00001" summary="jd">
+       <created>1600179042857</created>
+@@ -100,10 +113,15 @@
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
+     <state x="280" y="102" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1600179990769" />
+-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1600179261577">
+-      <screen x="0" y="0" width="1280" height="680" />
++    <state x="461" y="165" key="SettingsEditor" timestamp="1600343015921">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600343015921" />
++    <state x="350" y="113" key="Vcs.Push.Dialog.v2" timestamp="1600264513814">
++      <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1600179261577" />
++    <state x="350" y="113" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600264513814" />
+     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600179629230">
+       <screen x="0" y="0" width="1280" height="680" />
+     </state>
