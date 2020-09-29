@@ -20,7 +20,7 @@
     <div class="titreArticle">
       <h2><?php
         include_once ("../db.php");
-        $result = get_informations_from_db('SELECT * FROM articles ' );
+        $result = get_informations_from_db("SELECT * FROM articles WHERE Id = '".$_GET['id_article']."';" );
         echo $result['titre'];
         ?> </h2>
     </div>
