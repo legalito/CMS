@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="PASSWORD" host="la-myweb.univ-lemans.fr" id="02fe6559-d685-4d59-a711-a5d56b8a82f5" port="22" nameFormat="DESCRIPTIVE" username="i190324" />
+      <sshConfig authType="PASSWORD" host="la-projets.univ-lemans.fr" id="02fe6559-d685-4d59-a711-a5d56b8a82f5" port="2221" nameFormat="DESCRIPTIVE" username="i190324" />
     </configs>
   </component>
 </project>

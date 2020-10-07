@@ -10,7 +10,7 @@
 
 <body>
   <div class="fullscreen">
-    <div class="nav">  <button onclick="location.href='../partie3/login.html'"> Se connecter </button></div>
+    <div class="nav"> <img src="../../photos/Grandmere_cafe_logo.png" style="width: 5vw"> <button id="connexion" onclick="location.href='../partie3/login.html'"> Se connecter </button></div>
     <div class="containerPreview">
         <h3> Articles dernièrement ajoutés </h3>
         <div class="nom">
@@ -26,7 +26,7 @@
             // On affiche chaque entrée une à une
             while ($donnees = $reponse->fetch())
             {
-            echo '<li><a href="#'. $donnees['Id']. '">'. $donnees['titre'] . ' </a></li> <br>';
+            echo '<li onclick="afficheInputUtilisateur()"><a href="#'. $donnees['Id']. '">'. $donnees['titre'] . ' </a></li> <br>';
 
           }
 
@@ -38,22 +38,34 @@
         </div>
     </div>
     <div class="containerArticles">
-      <input type="search" id="site-search" name="q"
-             aria-label="Search through site content" placeholder="Rechercher un article">
+      <form action="index.php" method="get">
+        <input onclick="afficheInputUtilisateur()" type="search" id="site-search" name="requeteSearch"
+               aria-label="Search through site content" placeholder="Rechercher un article"  >
+        <button onclick="afficheInputUtilisateur()"> <img src="../../photos/recherche_logo_focused.png" style="width: 1vw; margin-top: 2px; border-radius: 50px" "> </button>
+      </form>
 
-      <button> <img src="../../photos/recherche_logo_focused.png" style="width: 1vw; margin-top: 2px; border-radius: 50px"> </button>
+
+
       <?php
-      $reponse = $db->query('SELECT * FROM articles ORDER BY titre ASC');
 
-      while ($donnees = $reponse->fetch())
+      $requete = $_GET['requeteSearch'];
+
+      $reponse = $db->query('SELECT * FROM articles WHERE titre LIKE "%'.$requete.'%" ORDER BY titre ASC ');
+
+
+       while ($donnees = $reponse->fetch())
       {
 
         echo '<div class="article" id="'. $donnees['Id'].'">
           <h1>' . $donnees['titre'] . '</h1>'
         .'<img src="../../photos/' . $donnees['Id']. '.jpg" style="width: 10vw;">
-          <p> '.$donnees['resume'].' </p>
-          <button> Afficher </button>
+          <p> '.$donnees['resume'].' </p>';
+        $variableThibaultOnsaitPas = "'../partie2/article.php?id_article=".$donnees['Id'];
+          echo '<button onclick="window.location.href='. $variableThibaultOnsaitPas ."'".'"'.'> Afficher  </button>
+
         </div>';
+
+
 
 
           }
@@ -64,5 +76,10 @@
 
     <div class="footer"> 2020. Tous les droits sont réservés . Tous les logos et marques de commerce appartiennent à leurs propriétaires respectifs. </div>
   </div>
+  <script>
+    function afficheInputUtilisateur() {
+      return (document.getElementById('site-search').value);
+    }
+  </script>
 </body>
 </html>
