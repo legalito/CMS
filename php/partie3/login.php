@@ -16,7 +16,6 @@
         document.getElementById('login_form').submit();
       }else{
         document.getElementById('error_message').innerHTML = 'Veuillez remplir les champs !';
-        document.getElementById('error_message').style = "color:red;";
       }
     }
   </script>
@@ -33,7 +32,27 @@
         <input name="password" id="password" type="password" placeholder="mot de passe"><br><br>
         <input type="button" value="Se connecter" onclick="connection();"><br><br>
 
-        <label id="error_message"></label><br><br>
+        <label style="color:red" id="error_message">
+          <?php
+
+          if(!empty($_GET['id_error'])){
+
+          $error_id = $_GET['id_error'];
+
+          $g = "'";
+
+          if($error_id == 0) {
+            echo 'Une erreur est survenue !';
+          }elseif ($error_id == 1){
+            echo 'Le mot de passe est incorrect !';
+          }elseif($error_id == 2){
+            echo 'L'.$g.' adresse mail n'.$g.'existe pas !';
+      }
+    }
+  ?>
+
+
+        </label><br><br>
       </form>
     </div>
   <div class="footer"> 2020. Tous les droits sont réservés . Tous les logos et marques de commerce appartiennent à leurs propriétaires respectifs. </div>

@@ -10,10 +10,7 @@
 
 <body>
   <div class="fullscreen">
-    <div class="nav">
-      <img src="../../photos/grandmere_cafe_logo.png" style="grid-column:2; width: 5vw">
-      <button id="connexion" onclick="location.href='../partie3/login.html'"> Se connecter </button>
-    </div>
+    <div class="nav"> <img src="../../photos/Grandmere_cafe_logo.png" style="width: 5vw"> <button id="connexion" onclick="location.href='../partie3/login.html'"> Se connecter </button></div>
     <div class="containerPreview">
         <h3> Articles dernièrement ajoutés </h3>
         <div class="nom">
@@ -44,7 +41,7 @@
       <form action="index.php" method="get">
         <input onclick="afficheInputUtilisateur()" type="search" id="site-search" name="requeteSearch"
                aria-label="Search through site content" placeholder="Rechercher un article"  >
-        <button onclick="afficheInputUtilisateur()"> <img src="../../photos/recherche_logo_focused.png" style="width: 1vw; margin-top: 2px; border-radius: 50px; cursor: pointer;" "> </button>
+        <button onclick="afficheInputUtilisateur()"> <img src="../../photos/recherche_logo_focused.png" style="width: 1vw; margin-top: 2px; border-radius: 50px" "> </button>
       </form>
 
 

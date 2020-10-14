@@ -1,14 +1,12 @@
 <?php
   session_start();
   $_SESSION['mail'] = "";
-  $_SESSION['password'];
+  $_SESSION['first_name'] = "";
+  $_SESSION['last_name'] = "";
+  $_SESSION['birthday_date'] = "";
+  $_SESSION = null;
 
-  $g = "'";
-  echo 'Vous êtes déconnecté ! Redirection vers la page d'. "'". 'accueil...';
-
-  echo '<br>';
-  echo '<input type="button" value="Accueil"
-    onclick="window.location=' . $g . 'partie1/index.php' . $g . '"/>';
+  header('Location:partie1/index.php');
 
   ?>
 

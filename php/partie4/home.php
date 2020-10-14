@@ -1,8 +1,9 @@
 <?php
   session_start();
-  if(empty($_SESSION['mail']) || empty($_SESSION['password'])){
+  if(empty($_SESSION['mail'])){
     header('Location: ../erreur.php');
   }
+  echo 'Bienvenue, ' . $_SESSION['first_name'] . " " . $_SESSION['last_name'];
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,9 @@
 <body>
 <div class="grid">
   <div class="menu">
-    <li><?php $_SESSION['name'] ?></li>
+    <li><?php
+    echo $_SESSION['first_name'] . " " . $_SESSION['last_name'];
+      ?></li>
     <li><?php
       include_once ("../db.php");
       $resultat = get_informations_from_db('SELECT * FROM articles WHERE Id = 1');
