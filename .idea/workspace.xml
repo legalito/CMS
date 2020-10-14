@@ -20,26 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee897c69-a053-4dfa-a13d-6d0ba4066773" name="Default Changelist" comment="oui">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_08_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_08__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_10_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_10__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_13_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_13__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_38_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_38__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_38__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_38__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_57_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_57__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_59_[Default_Changelist]/grandmere_cafe_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_59_[Default_Changelist]/idex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_59_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_09_2020_14_59__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_14_43__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_14_44__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_14_44__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_09_2020_14_44__Default_Changelist_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/partie1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/partie1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie1/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/partie2/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/partie2/article.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +79,7 @@
       <workItem from="1600862644148" duration="4866000" />
       <workItem from="1601359870215" duration="98000" />
       <workItem from="1601364221707" duration="275000" />
+      <workItem from="1602685312181" duration="1391000" />
     </task>
     <task id="LOCAL-00001" summary="V1">
       <created>1600179283899</created>
@@ -198,15 +182,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="jd" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="350" y="0" key="#Deployment" timestamp="1601364486597">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="233" y="0" key="#Deployment" timestamp="1602685968721">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1600863673748" />
+    <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1602685968721" />
     <state x="350" y="0" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1601364486597" />
-    <state x="326" y="0" key="#SSH_Configurations" timestamp="1601364465643">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="217" y="0" key="#SSH_Configurations" timestamp="1602685223393">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="217" y="0" key="#SSH_Configurations/0.0.1280.680@0.0.1280.680" timestamp="1600863671232" />
+    <state x="217" y="0" key="#SSH_Configurations/0.0.1280.680@0.0.1280.680" timestamp="1602685223393" />
     <state x="326" y="0" key="#SSH_Configurations/0.0.1920.1040@0.0.1920.1040" timestamp="1601364465643" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600863400537">
       <screen x="0" y="0" width="1280" height="680" />
@@ -234,9 +218,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="526" y="71" key="ftp.server.browser/0.0.1280.680@0.0.1280.680" timestamp="1600850848786" />
-    <state x="512" y="233" key="publish.login" timestamp="1600850366903">
+    <state x="512" y="233" key="publish.login" timestamp="1602685087738">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="512" y="233" key="publish.login/0.0.1280.680@0.0.1280.680" timestamp="1600850366903" />
+    <state x="512" y="233" key="publish.login/0.0.1280.680@0.0.1280.680" timestamp="1602685087738" />
   </component>
 </project>

@@ -7,7 +7,7 @@
 </head>
 <body class="body">
   <div class="nav">
-    <img src="../../photos/grandmere_cafe_logo.png" style="width: 5vw" class="logo" alt="Logo">
+    <img src="../../photos/grandmere_cafe_logo.png" class="logo" alt="Logo">
 
   </div>
   <div class="Art_En_Cour"> en cour </div>

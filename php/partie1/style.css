@@ -18,13 +18,26 @@ h3 {
   align-items: start;
   flex-direction : row;
   justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1vw 79vw 10vw 1vw;
 }
+
 .nav :first-child {
   align-self: center;
 }
 
 #connexion{
-  text-align: right;
+  grid-column: 3;
+  margin-top: 1.5vw;
+  font-size: 1.3vw;
+  border: solid 0.2vw white;
+  border-radius: 10vw;
+}
+
+#connexion:hover{
+  background: saddlebrown;
+  color: white;
+  cursor: pointer;
 }
 
 
@@ -97,6 +110,7 @@ h3 {
   color: saddlebrown;
   background-color: white;
   border : solid 0.2vw saddlebrown;
+  cursor: pointer;
 }
 .footer{
   grid-row: 3;
