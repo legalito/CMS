@@ -16,30 +16,32 @@
 
   </div>
   <div class="Art">
+    <div class="art-info">
 
-    <div class="titreArticle">
-      <h2><?php
-        include_once ("../db.php");
-        $result = get_informations_from_db("SELECT * FROM articles WHERE Id = '".$_GET['id_article']."';" );
-        echo $result['titre'];
-        ?> </h2>
+        <h2><?php
+          include_once ("../db.php");
+          $result = get_informations_from_db("SELECT * FROM articles WHERE Id = '".$_GET['id_article']."';" );
+          echo $result['titre'];
+          ?> </h2>
+      <p class="art-notes">évaluation de l'article : <?php echo $result['notes'] ?></p>
+      <p class="art-resume"><?php echo $result['resume']; ?></p>
+      <p class="art-prix">Prix: <?php echo $result['prix']; ?> Livraison GRATUITE en France métropolitaine</p>
+
     </div>
 
-    <div class="art-img">
-      <img src="../../photos/<?php echo $result['Id'] ?>.jpg" style="width: 25vw;" >
-    </div>
-
-    <div class="art-notes">
-      <p>évaluation de l'article : <?php echo $result['notes'] ?></p>
-    </div>
-
-
-    <div class="resume"><?php echo $result['resume']; ?></div>
-
-
+    <img class="art-img" src="../../photos/<?php echo $result['Id'] ?>.jpg" style="width: 25vw;" >
 
   </div>
 
 <div class="footer"> footer </div>
+
+<script>
+  if (<?php echo $result['notes']?>== 0){
+
+  }
+
+
+
+</script>
 </body>
 </html>
