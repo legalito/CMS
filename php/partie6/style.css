@@ -1,0 +1,21 @@
+.login_form{
+  grid-row: 2;
+  grid-column: 2;
+  text-align: center;
+  margin-bottom: auto;
+
+}
+
+.login_form h1{
+  font-family: "Agency FB";
+}
+
+.login_form label{
+  font-family: "Agency FB";
+  margin: auto;
+}
+
+.login_form input{
+  text-align: center;
+  border-radius:5px;
+}

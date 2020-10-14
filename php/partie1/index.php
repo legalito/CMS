@@ -10,7 +10,7 @@
 
 <body>
   <div class="fullscreen">
-    <div class="nav"> <img src="../../photos/Grandmere_cafe_logo.png" style="width: 5vw"> <button id="connexion" onclick="location.href='../partie3/login.html'"> Se connecter </button></div>
+    <div class="nav"> <img src="../../photos/grandmere_cafe_logo.png" style="width: 5vw"> <button id="connexion" onclick="location.href='../partie3/login.html'"> Se connecter </button></div>
     <div class="containerPreview">
         <h3> Articles dernièrement ajoutés </h3>
         <div class="nom">
