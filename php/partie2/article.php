@@ -17,9 +17,7 @@
       <ul>
         <?php
 
-        include_once('../db.inc.php');
-
-        $db = new PDO("$server:host=$host;dbname=$dbname", $user, $password);
+        $db = new PDO("mysql:host=localhost;dbname=id15386017_bdd", "id15386017_admin", "7fFCn@29cN^pAATy");
 
         $reponse = $db->query('SELECT * FROM articles ORDER BY Id DESC ');
 
