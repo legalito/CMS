@@ -44,21 +44,30 @@
 
 }
 
+.art-prix{
+  grid-row: 3;
+  grid-column: 2;
+}
+
 
 
 .containerPreview{
 grid-column: 1;
   grid-row: 2;
-  background-color: red;
   margin-right: 1vw;
 }
 
 
 .footer{
-  grid-column: 1/-1;
   grid-row: 3;
+  grid-column: 1/-1;
   background-color: saddlebrown;
-  margin-top: 1vw;
+  font: 1rem 'Fira Sans', sans-serif;
+  color: white;
+  vertical-align: center;
+  text-align: center;
+  horiz-align: center;
+  padding-top: 1vw;
 }
 
 a{

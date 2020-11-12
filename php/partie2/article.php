@@ -56,7 +56,7 @@
 
   </div>
 
-<div class="footer"> footer </div>
+<div class="footer"> 2020. Tous les droits sont réservés . Tous les logos et marques de commerce appartiennent à leurs propriétaires respectifs. </div>
 
   <script>
     var note = document.getElementById('note').textContent;
